@@ -1,0 +1,219 @@
+.frontPage{
+    margin: 7rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.frontPage div:first-child{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 300px;
+}
+.frontPage div:first-child p{
+    font-size: 50px;
+    font-weight: 800;
+    color: #2B3F60;
+}
+.frontPage div:first-child span:nth-child(3){
+    background-color: #F36B7F;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.front-backgroundImage{
+    background-image: url('../Assets/illustration/Illustration.png');
+    width: calc(100% - 40%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.companies{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8rem;
+    overflow-x: scroll;
+}
+.companies::-webkit-scrollbar{
+    width: 0px
+}
+.companies img{
+    width: 133px;
+    height: 77px;
+    filter: invert(75%);
+    cursor: pointer;
+}
+.companies img:hover{
+    filter: invert(65%);
+}
+.appDescription{
+    background-color: #F36B7F;
+    display: flex;
+    justify-content: space-between;
+    padding: 9rem 8rem 6rem 8rem;
+    color: white;
+    position: relative;
+    margin-top: 5rem;
+}
+.appDescription div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 2rem;
+}
+.appDescription div p{
+    font-size: 37px;
+    font-weight: 700;
+}
+.appDescription div span{
+    width: 80%;
+}
+.iphoneImage{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+.services{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F7FD;
+    height: 747px;
+    padding: 3rem 8rem;
+    justify-content: space-evenly;
+}
+.servicesBox{
+    display: flex;
+    gap: 4rem;
+}
+.servicesCards{
+    display: flex;
+    padding: 4rem 0 0 0;
+    position: relative;
+}
+.servicesHeading{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.servicesCards div{
+    background-color: #fefefe;
+    border-radius: 24px;
+    filter: drop-shadow(10px 18px 20px 5 #eff3ff 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 5rem 2rem;
+}
+.servicesCards div p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.servicesCards div span{
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.4;
+}
+.servicesCards div span:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.servicesCards:first-child span:last-child{
+    background-color: #82B5A5;
+}
+.servicesCards:nth-child(2) span:last-child{
+    background-color: #F8CF61;
+}
+.servicesCards:last-child span:last-child{
+    background-color: #99BBFF;
+}
+
+.customerCare{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customerCare div{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 9rem;
+}
+.customerCare div span:last-child{
+    background-color: #F36B7F;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.customerCare p{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.customerCare img{
+    position: relative;
+    width: 657px;
+    bottom: 120px;
+}
+
+@media only screen and (max-width: 480px){
+    .frontPage{
+        margin: 2rem;
+    }
+    .front-backgroundImage{
+        display: none;
+    }
+    .frontPage div:first-child{
+        width: 100%;
+    }
+    .companies{
+        margin: 2rem;
+        overflow-x: scroll;
+        justify-content:flex-start;
+        gap: 1rem
+    }
+    .appDescription{
+        padding: 3rem 1rem 3rem 1rem;
+    }
+    .appDescription div{
+        width: 100%;
+    }
+    .iphoneImage{
+        display: none;
+    }
+    .services{
+        height: auto;
+        padding: 3rem 2rem 5rem 2rem;
+    }
+    .servicesBox{
+        flex-direction: column;
+    }
+    .servicesHeading{
+        font-size: 2.3rem;
+        padding: 2.5rem 0;
+    }
+    .customerCare div{
+        width: 70%;
+    }
+    .customerCare{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .customerCare img{
+        width: 300px;
+        bottom: 50px;
+        right: 30px;
+    }
+}

@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+}
+.navbar>p{
+    font-size: 1.7rem;
+    color:#F36B7F;
+    font-weight: bold;
+}
+.navbar div:nth-child(2){
+    font-size: 0.9rem !important;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.navbar div:nth-child(2) div span{
+    cursor: pointer;
+    padding: 0.5rem 1.7rem;
+    border-radius: 20px;
+}
+.navbar div:nth-child(2) div span:hover{
+    background-color: #F36B7F;
+    color: #fefefe;
+}
+.loginButton{
+    color: #F36B7F;
+    border: 2px solid #F36B7F;
+    padding: 0.3rem 1.7rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 480px){
+    .navbar{
+        padding: 2rem;
+    }
+    .navbar div:nth-child(2) div span{
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+.footer{
+    background-color: #82B5A5;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3rem 8rem;
+    border-top-left-radius: 200px;
+    color: #fefefe;
+    position: absolute;
+    bottom: 0;
+}
+.footer p:first-child{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px){
+    .footer{
+        position: static;
+        padding:  1rem 1rem 1rem 5rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footer p:first-child{
+        font-size: 1.5rem;
+        width: 200px;
+    }
+    .footer p:last-child{
+        width: 300px;
+    }
+}
